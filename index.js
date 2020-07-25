@@ -1,0 +1,52 @@
+// here Javascript starts.
+// variable declarations.
+var hamburger = document.querySelector('.bars-icon');
+var navbar = document.querySelector('.nav-bar');
+var iconclasses = ['fas fa-bars',"fas fa-times","fas fa-moon","fas fa-sun"];
+var icon = document.querySelector('#hamburger');
+var darkIcon = document.querySelector('#dark');
+var body = document.querySelector('body');
+var navLink = document.querySelector('a');
+var p = document.querySelector('p');
+var title = document.querySelector('#title');
+var header = document.querySelector('header');
+
+function navigate(){
+    if (icon.className = iconclasses[0]){
+        navbar.style.display='block';
+        icon.setAttribute("class", "fas fa-times");
+    }
+    
+
+    else{
+        document.write('something went wrong');
+    }
+}
+function response(){
+    if (icon.className = iconclasses[1]){
+        icon.addEventListener('click',function(){
+            icon.setAttribute("class", "fas fa-bars");
+            navbar.style.display='none';
+        });
+    }
+}
+
+function darkTheme(){
+    if(darkIcon.className = iconclasses[2]){
+        body.style.background='#343647';
+        navLink.style.color='white';
+        navbar.style.background='#343647';
+        p.style.color='white';
+        title.style.color='white';
+        header.style.background='#343647';
+        darkIcon.setAttribute('class','fas fa-sun');
+    }
+}
+ function solarTheme(){
+    if(darkIcon.className = iconclasses[3]){
+        body.style.background='white';
+        navbar.style.background='white';
+        darkIcon.setAttribute('class','fas fa-moon');
+    }
+ }
+

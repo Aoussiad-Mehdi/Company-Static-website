@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    background: white;
+    
+}
+.logo{
+    width: 100px;
+    margin-left: 5%;
+    transition: .3s ease;
+    border-radius: 50%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 3px 3px 6px #888888;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+#imglogo{
+    width: 100%;
+    height: 45px;
+    border-radius: 50%;
+}
+.logotext{
+    margin-left: 2%;
+}
+#txtlogo{
+    font-family: 'Radens' ,sans-serif;
+    color: rgb(0, 195, 255);
+}
+.logo2{
+    text-decoration: none;
+}
+nav{
+    flex: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+.nav-link{
+    margin-right: 30px;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(129, 128, 128);
+    transition: .2s linear;
+}
+.nav-link:hover{
+    color: rgb(0, 195, 255);
+    text-decoration: underline;
+}
+.dark-icon{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 3%;
+    left: 88%;
+}
+.bars-icon{
+    position: absolute;
+    top: 3%;
+    left: 90%;
+    font-size: 30px;
+    color: rgb(0, 195, 255);
+    display: none;
+    transition: .3s ease;
+}
+.nav-bar{
+    z-index: 1;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    list-style: none;
+    display: none;
+    transition: .4s ease;
+}
+/* the responsiveness for the navbar */
+@media (max-width:705px){
+    .bars-icon{
+        display: block;
+        left: 90%;
+    }
+    nav{
+        display: none;
+    }
+    .dark-icon{
+        position: absolute;
+        top: 3%;
+        left: 70%;
+    }
+    #link{
+        margin-top: 30px;
+    }
+    .firstext{
+        padding: 10px 10px;
+        color: rgb(129, 128, 128);
+    } 
+    img{
+        height: 300px;
+    }
+
+}
+
+
+.allcontent{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.firstext{
+    padding: 10px 60px;
+    margin-bottom: 20px;
+    color:rgb(102, 101, 101);
+    font-size: 17px;
+
+}
+img{
+    width: 90%;
+    height: 380px;
+    margin-bottom: 9%;
+    margin-left: 5%;
+    border-radius: 1%;
+    z-index: -1;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 15px 25px;
+    background: rgb(0, 195, 255);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+.about{
+    width: 100%;
+    height: 400px;
+}
+.contain{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+p{
+    padding: 10px 60px;
+    margin-bottom: 20px;
+    color:rgb(102, 101, 101);
+    font-size: 17px;
+}
+.card{
+    width: 250px;
+    height: 260px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    
+    
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.pic{
+    border-radius: 50%;
+    width: 100px;
+    height: 120px;
+    margin-left: 47%;
+    z-index: 1;
+}
+
+
+footer{
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 160%;
+}
+.icons{
+    margin-left: 40%;
+}
+i{
+    margin-left: 20px;
+    font-size: 25px;
+    color: rgb(0, 195, 255);
+}
+@media (max-width:800px){
+    footer{
+        display: none;
+    }
+    .about{
+        margin-top: 20%;
+    }
+}
+@media (max-width:600px){
+    footer{
+        display: none;
+    }
+    .about{
+        margin-top: 50%;
+    }
+}
+@media (max-width:500px){
+    footer{
+        display: none;
+    }
+    .about{
+        margin-top: 80%;
+    }
+}
+@media (max-width:400px){
+    footer{
+        display: none;
+    }
+    .about{
+        margin-top: 100%;
+    }
+    .card{
+        margin-right: 30%;
+    }
+}
+
