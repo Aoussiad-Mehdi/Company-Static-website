@@ -137,18 +137,39 @@ nav{
 }
 .firstext{
     padding: 10px 60px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color:rgb(102, 101, 101);
     font-size: 17px;
 
 }
-img{
-    width: 90%;
-    height: 380px;
-    margin-bottom: 9%;
+.slider{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3%;
     margin-left: 5%;
-    border-radius: 1%;
+    background-image: url(logo1.jpg);
     z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: animate 10s infinite;
+}
+@keyframes animate{
+    10%{
+        background-image: url(logo1.jpg);
+        transform: scale(1.1);
+    }
+    40%{
+        background-image: url(photo.jpeg);
+        transform: scale(1.1);
+    }
+    60%{
+        background-image: url(website.jpeg);
+        transform: scale(1.1);
+    }
+    95%{
+        background-image: url(film.jpeg);
+        transform: scale(1.1);
+    }
 }
 .button{
     display: flex;
@@ -166,6 +187,10 @@ img{
 .about{
     width: 100%;
     height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 3%;
 }
 .contain{
     width: 100%;
@@ -179,6 +204,7 @@ h1{
     text-align: center;
     font-family: sans-serif;
     margin-top: 30px;
+    text-decoration: underline;
 }
 
 p{
@@ -187,26 +213,23 @@ p{
     color:rgb(102, 101, 101);
     font-size: 17px;
 }
-.card{
-    width: 250px;
-    height: 260px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-left: 45%;
-    
-    
-}
-h2{
-    text-align: center;
-    text-decoration: underline;
+.picture{
+    width: 49%;
 }
 .pic{
+    width: 100%;
+    height: 320px;
+    padding: 40px;
     border-radius: 50%;
-    width: 100px;
-    height: 120px;
-    margin-left: 47%;
-    z-index: 1;
+}
+/* media querries for the about section */
+@media (max-width:705px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .picture{
+        width: 100%;
+    }
 }
 
 
@@ -220,7 +243,7 @@ footer{
     justify-content: center;
     z-index: 1;
     position: absolute;
-    top: 160%;
+    top: 250%;
 }
 .icons{
     margin-left: 40%;
@@ -261,8 +284,44 @@ i{
     .about{
         margin-top: 100%;
     }
-    .card{
-        margin-right: 30%;
+}
+/* services section */
+.services{
+    width: 100%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 20px 20px;
+}
+#pic{
+    width: 60%;
+    height: 200px;
+    margin-left: 2%;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+#service{
+    text-align: center;
+}
+@media (max-width:705px){
+    .services{
+       display: none;
+    }
+    #serv{
+        display: none;
     }
 }
-
+/*contact*/
+#contact{
+    margin-top: 5%;
+}
+.sm{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+#social{
+    font-size: 50px;
+    
+}
