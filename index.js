@@ -42,11 +42,4 @@ function darkTheme(){
         darkIcon.setAttribute('class','fas fa-sun');
     }
 }
- function solarTheme(){
-    if(darkIcon.className = iconclasses[3]){
-        body.style.background='white';
-        navbar.style.background='white';
-        darkIcon.setAttribute('class','fas fa-moon');
-    }
- }
 
