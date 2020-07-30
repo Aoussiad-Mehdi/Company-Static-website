@@ -31,15 +31,4 @@ function response(){
     }
 }
 
-function darkTheme(){
-    if(darkIcon.className = iconclasses[2]){
-        body.style.background='#343647';
-        navLink.style.color='white';
-        navbar.style.background='#343647';
-        p.style.color='white';
-        title.style.color='white';
-        header.style.background='#343647';
-        darkIcon.setAttribute('class','fas fa-sun');
-    }
-}
 

@@ -17,6 +17,8 @@ header{
     display: flex;
     align-items: center;
     background: white;
+    top: 0;
+    position: sticky;
     
 }
 .logo{
@@ -64,13 +66,6 @@ nav{
 .nav-link:hover{
     color: rgb(0, 195, 255);
     text-decoration: underline;
-}
-.dark-icon{
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    top: 3%;
-    left: 88%;
 }
 .bars-icon{
     position: absolute;
@@ -313,6 +308,10 @@ i{
     }
 }
 /*contact*/
+.contact{
+    width: 100%;
+    height: auto;
+}
 #contact{
     margin-top: 5%;
 }
@@ -324,4 +323,11 @@ i{
 #social{
     font-size: 50px;
     
+}
+/* responsiveness */
+@media (max-width:705px){
+    .contact{
+        position: absolute;
+        top: 260%;
+    }
 }
